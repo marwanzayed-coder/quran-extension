@@ -1,0 +1,165 @@
+:root {
+  --main-color: #1d2239;
+  --main-bg-color: #292e48;
+  --main-text-color: #23a96e;
+  --color-ddd: #ddd;
+  --color-white: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Changa", sans-serif;
+  background-color: var(--main-color);
+  color: var(--color-white);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: 100% 100vh;
+  position: relative;
+}
+
+html {
+  overflow-x: hidden;
+}
+/* iconmoon */
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?hm7g0k");
+  src: url("../fonts/icomoon.eot?hm7g0k#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?hm7g0k") format("truetype"),
+    url("../fonts/icomoon.woff?hm7g0k") format("woff"),
+    url("../fonts/icomoon.svg?hm7g0k#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+/* iconmoon */
+/* Quran */
+@font-face {
+  font-family: "Quran Reguler";
+  src: url("../fonts/QuranRegular.ttf") format("truetype");
+  font-display: swap;
+}
+
+/* Quran */
+.container {
+  width: 100%;
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+.text-center {
+  text-align: center;
+}
+.mt-5 {
+  margin-top: 3rem !important;
+}
+.p-3 {
+  padding: 1rem !important;
+}
+
+.h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.h3 {
+  font-size: calc(1.3rem + 0.6vw);
+}
+@media (min-width: 1200px) {
+  .h3 {
+    font-size: 1.75rem;
+  }
+}
+.mb-1 {
+  margin-bottom: 0.25rem !important;
+}
+.text-muted {
+  --bs-text-opacity: 1;
+  color: #6c757d !important;
+}
+/* ------------------- */
+.home,
+.home .container {
+  height: 100vh;
+}
+.home .date {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+}
+.home .time {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+}
+.home .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home .ayah {
+  font-family: "Quran Reguler", serif;
+  padding: 20px;
+  line-height: 50px;
+  word-spacing: 3px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: 100%;
+}
+.home .ayahName {
+  line-height: 50px;
+  word-spacing: 3px;
+  border-radius: 10px;
+  font-size: 20px;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+/* ------------------- */
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}

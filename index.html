@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quran Extension</title>
+    <meta
+      name="description"
+      content="The Holy Quran website - an Islamic website that helps people to read the Holy Qur’an and the remembrances (evening and morning remembrances, legal ruqyah and other remembrances)"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href="/images/icon-128.png" />
+    <link rel="manifest" href="/manifest.json" />
+  </head>
+  <body id="body">
+    <section class="home">
+      <div class="container">
+        <div class="alarm-clock">
+          <div class="date">
+            <span class="month"></span>
+            <span class="day"></span>,
+            <span class="year"></span>
+          </div>
+
+          <div class="time">
+            <span class="times"></span>
+          </div>
+        </div>
+        <p
+          class="h3 ayah text-center p-3 border ayah-container"
+          id="ayah"
+          dir="rtl"
+        ></p>
+        <p class="ayahName" id="ayah-name"></p>
+      </div>
+    </section>
+    <footer>
+      <a href="https://quranweb.herokuapp.com/citationForMorning"
+        >اذكار الصباح</a
+      >
+      <a href="https://quranweb.herokuapp.com/eveningPrayers">اذكار المساء</a>
+      <a href="https://quranweb.herokuapp.com/roqia">الرقية الشرعية</a>
+    </footer>
+    <script src="js/background.js"></script>
+  </body>
+</html>
